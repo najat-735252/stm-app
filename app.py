@@ -4,6 +4,7 @@ import pandas as pd
 from dummies import *
 import joblib
 
+
 scaler = joblib.load('scaler.h5')
 model = joblib.load('model.h5')
 
