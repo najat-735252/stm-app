@@ -2,11 +2,7 @@
 import streamlit as st
 import pandas as pd
 from dummies import *
-try:
-    import joblib
-    print("Joblib library is installed")
-except ImportError as e:
-    print("Joblib library is not installed:", e)
+import joblib
 
 
 scaler = joblib.load('scaler.h5')
